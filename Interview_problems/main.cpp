@@ -6,9 +6,10 @@
 
 int main(int argc, char *argv[])
 {
-  std::array<int, 5> testArr{7,5,2,3,8};
+  const std::array<int, 8> testArr{7,5,2,3,8,1,13,5};
   //std::iota(testArr.begin(), testArr.end(), 1);
 
-  std::cout << smallestNonUnique(testArr) << '\n';
+  std::cout << getMinAndMax(testArr).first << '\n'
+            << getMinAndMax(testArr).second << '\n';
   return 0;
 }

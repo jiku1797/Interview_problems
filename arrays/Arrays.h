@@ -39,4 +39,24 @@ int smallestNonUnique(std::array<int, N> arr)
 
   return -1;
 }
+
+/* How do you find the largest and smallest number in an unsorted integer array?
+ * Returns pair w/ (min, max)
+*/
+template <typename T, std::size_t N>
+auto getMinAndMax(const std::array<T, N>& arr)
+{
+  auto min{arr.at(0)};
+  auto max{arr.at(0)};
+
+  std::for_each(std::begin(arr), std::end(arr), [&min, &max](const auto elem)
+  {
+    if(elem < min)
+      min = elem;
+    else if(elem > max)
+      max = elem;
+  });
+
+  return std::make_pair(min, max);
+}
 #endif // ARRAYS_H
