@@ -12,4 +12,5 @@ struct pair_hash
         return h1 ^ h2;
     }
 };
+
 #endif // UTIL_H
