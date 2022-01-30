@@ -1,0 +1,167 @@
+Array Coding Interview Questions
+An array is the most fundamental data structure, which stores elements at a contiguous memory location. It is also one of the darling topics of interviewers and you will hear a lot of questions about an array in any coding interview, e.g. reversing an array, sorting the array, or searching elements on the array.
+The key benefit of an array data structure is that it offers fast O(1) search if you know the index, but adding and removing an element from an array is slow because you cannot change the size of the array once it’s created.
+
+In order to create a shorter or longer array, you need to create a new array and copy all elements from old to new. The key to solving array-based questions is having a good knowledge of array data structure as well as basic programming constructors such as loop, recursion, and fundamental operators.
+Here are some of the popular array-based coding interview questions for your practice:
+
+How do you find the missing number in a given integer array of 1 to 100?
+How do you find the duplicate number on a given integer array?
+How do you find the largest and smallest number in an unsorted integer array?
+How do you find all pairs of an integer array whose sum is equal to a given number?
+How do you find duplicate numbers in an array if it contains multiple duplicates?
+How are duplicates removed from a given array in Java?
+How is an integer array sorted in place using the quicksort algorithm?
+How do you remove duplicates from an array in place?
+How do you reverse an array in place in Java?
+How are duplicates removed from an array without using any library?
+Ready for the solutions to the problems?
+
+Here are the solutions to each of these array problems:
+
+How do you find the missing number in a given integer array of 1 to 100? (solution)
+How do you find the duplicate number on a given integer array? (solution)
+How do you find the largest and smallest number in an unsorted integer array? (solution)
+How do you find all pairs of an integer array whose sum is equal to a given number? (solution)
+How do you find duplicate numbers in an array if it contains multiple duplicates? (solution)
+How are duplicates removed from a given array in Java? (solution)
+How is an integer array sorted in place using the quicksort algorithm? (solution)
+How do you remove duplicates from an array in place? (solution)
+How do you reverse an array in place in Java? (solution)
+How are duplicates removed from an array without using any library? (solution)
+These questions will not only help you to develop your problem-solving skills but also improve your knowledge of array data structure.
+Linked List Programming Interview Questions
+A linked list is another common data structure that complements the array data structure. Similar to the array, it is also a linear data structure and stores elements in a linear fashion. However, unlike the array, it doesn’t store them in contiguous locations; instead, they are scattered everywhere in memory, which is connected to each other using nodes.
+
+A linked list is nothing but a list of nodes where each node contains the value stored and the address of the next node.
+
+Because of this structure, it’s easy to add and remove elements in a linked list, as you just need to change the link instead of creating the array, but the search is difficult and often requires O(n) time to find an element in the singly linked list.
+
+It also comes in varieties like a singly linked list, which allows you to traverse in one direction (forward or reverse); a doubly linked list, which allows you to traverse in both directions (forward and backward); and finally, the circular linked list, which forms a circle.
+
+In order to solve linked list-based questions, a good knowledge of recursion is important, because a linked list is a recursive data structure.
+If you take one node from a linked list, the remaining data structure is still a linked list, and because of that, many linked list problems have simpler recursive solutions than iterative ones.
+
+Here are some of the most common and popular linked list interview questions and their solutions:
+
+How do you find the middle element of a singly linked list in one pass?
+How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle?
+How do you reverse a linked list?
+How do you reverse a singly linked list without recursion?
+How are duplicate nodes removed in an unsorted linked list?
+How do you find the length of a singly linked list?
+How do you find the third node from the end in a singly linked list?
+How do you find the sum of two linked lists using Stack?
+Ready for the solutions to the problems?
+Here are the solutions to each of these linked list problems:
+
+How do you find the middle element of a singly linked list in one pass? (solution)
+How do you check if a given linked list contains a cycle? How do you find the starting node of the cycle? (solution)
+How do you reverse a linked list? (solution)
+How do you reverse a singly linked list without recursion? (solution)
+How are duplicate nodes removed in an unsorted linked list? (solution)
+How do you find the length of a singly linked list? (solution)
+How do you find the third node from the end in a singly linked list? (solution)
+How do you find the sum of two linked lists using Stack? (solution)
+These questions will help you to develop your problem-solving skills as well as improve your knowledge of the linked list data structure.
+
+String Coding Interview Questions
+Along with array and linked list data structures, a string is another popular topic on programming job interviews. I have never participated in a coding interview where no string-based question was asked.
+
+A good thing about the string is that if you know the array, you can solve string-based questions easily, because strings are nothing but a character array.
+
+So all the techniques you learn by solving array-based coding questions can be used to solve string programming questions as well.
+Here is my list of frequently asked string coding questions from programming job interviews:
+
+How do you print duplicate characters from a string?
+How do you check if two strings are anagrams of each other?
+How do you print the first non-repeated character from a string?
+How can a given string be reversed using recursion?
+How do you check if a string contains only digits?
+How are duplicate characters found in a string?
+How do you count a number of vowels and consonants in a given string?
+How do you count the occurrence of a given character in a string?
+How do you find all permutations of a string?
+How do you reverse words in a given sentence without using any library method?
+How do you check if two strings are a rotation of each other?
+How do you check if a given string is a palindrome?
+Ready for the solutions to the problems?
+
+Here are the solutions to each of these string problems:
+
+How do you print duplicate characters from a string? (solution)
+How do you check if two strings are anagrams of each other? (solution)
+How do you print the first non-repeated character from a string? (solution)
+How can a given string be reversed using recursion? (solution)
+How do you check if a string contains only digits? (solution)
+How are duplicate characters found in a string? (solution)
+How do you count a number of vowels and consonants in a given string? (solution)
+How do you count the occurrence of a given character in a string? (solution)
+How do you find all permutations of a string? (solution)
+How do you reverse words in a given sentence without using any library method? (solution)
+How do you check if two strings are a rotation of each other? (solution)
+How do you check if a given string is a palindrome? (solution)
+These questions help improve your knowledge of string as a data structure.
+
+Binary Tree Coding Interview Questions
+So far, we have looked at only the linear data structure, but all information in the real world cannot be represented in linear fashion, and that’s where tree data structure helps.
+
+Tree data structure is a data structure that allows you to store your data in a hierarchical fashion. Depending on how you store data, there are different types of trees, such as a binary tree, where each node has, at most, two child nodes.
+
+Along with its close cousin binary search tree, it’s also one of the most popular tree data structures. Therefore, you will find a lot of questions based upon them, such as how to traverse them, count nodes, find depth, and check if they are balanced or not.
+A key point to solving binary tree questions is a strong knowledge of theory, e.g. what is the size or depth of the binary tree, what is a leaf, and what is a node, as well as an understanding of the popular traversing algorithms, e.g. pre-, post-, and in-order traversal.
+Here is a list of popular binary tree-based coding questions from software engineer or developer job interviews:
+
+How is a binary search tree implemented?
+How do you perform preorder traversal in a given binary tree?
+How do you traverse a given binary tree in preorder without recursion?
+How do you perform an inorder traversal in a given binary tree?
+How do you print all nodes of a given binary tree using inorder traversal without recursion?
+How do you implement a postorder traversal algorithm?
+How do you traverse a binary tree in postorder traversal without recursion?
+How are all leaves of a binary search tree printed?
+How do you count a number of leaf nodes in a given binary tree?
+How do you perform a binary search in a given array?
+Ready for the solutions to the problems?
+
+Here are the solutions to each of these binary tree problems:
+
+How is a binary search tree implemented? (solution)
+How do you perform preorder traversal in a given binary tree? (solution)
+How do you traverse a given binary tree in preorder without recursion? (solution)
+How do you perform an inorder traversal in a given binary tree? (solution)
+How do you print all nodes of a given binary tree using inorder traversal without recursion? (solution)
+How do you implement a postorder traversal algorithm? (solution)
+How do you traverse a binary tree in postorder traversal without recursion? (solution)
+How are all leaves of a binary search tree printed? (solution)
+How do you count a number of leaf nodes in a given binary tree? (solution)
+How do you perform a binary search in a given array? (solution)
+If you feel that your understanding of binary tree coding is inadequate and you can’t solve these questions on your own, I suggest you go back and pick a good data structure and algorithm book.
+Miscellaneous Coding Interview Questions
+Apart from data structure-based questions, most of the programming job interviews also ask algorithm, design, bit manipulation, and general logic-based questions, which I’ll describe in this section.
+
+It’s important that you practice these concepts because sometimes they become tricky to solve in the actual interview. Having practiced them before not only makes you familiar with them, but also gives you more confidence in explaining the solution to the interviewer.
+
+How is a bubble sort algorithm implemented?
+How is an iterative quicksort algorithm implemented?
+How do you implement an insertion sort algorithm?
+How is a merge sort algorithm implemented?
+How do you implement a bucket sort algorithm?
+How do you implement a counting sort algorithm?
+How is a radix sort algorithm implemented?
+How do you swap two numbers without using the third variable?
+How do you check if two rectangles overlap with each other?
+How do you design a vending machine?
+Ready for the solutions to the problems?
+Here are the solutions to each of these miscellaneous problems:
+
+How is a bubble sort algorithm implemented? (solution)
+How is an iterative quicksort algorithm implemented? (solution)
+How do you implement an insertion sort algorithm? (solution)
+How is a merge sort algorithm implemented? (solution)
+How do you implement a bucket sort algorithm? (solution)
+How do you implement a counting sort algorithm? (solution)
+How is a radix sort algorithm implemented? (solution)
+How do you swap two numbers without using the third variable? (solution)
+How do you check if two rectangles overlap with each other? (solution)
+How do you design a vending machine? (solution)
