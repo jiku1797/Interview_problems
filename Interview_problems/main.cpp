@@ -6,10 +6,9 @@
 
 int main(int argc, char *argv[])
 {
-  std::array<int, 99> testArr;
-  std::iota(testArr.begin(), testArr.end(), 1);
-  testArr.at(77) = 100;
+  std::array<int, 5> testArr{7,5,2,3,8};
+  //std::iota(testArr.begin(), testArr.end(), 1);
 
-  std::cout << missingNum(testArr);
+  std::cout << smallestNonUnique(testArr) << '\n';
   return 0;
 }
