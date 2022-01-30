@@ -11,4 +11,5 @@ SOURCES += \
         main.cpp
 
 HEADERS += \
-  ../arrays/Arrays.h
+  ../arrays/Arrays.h \
+  Util.h

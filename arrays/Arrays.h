@@ -5,8 +5,11 @@
 #include <vector>
 #include <numeric>
 #include <algorithm>
+#include <unordered_set>
 
-/*How do you find the missing number in a given
+#include "Util.h"
+
+/* How do you find the missing number in a given
  * integer array of 1 to 100?
  * We assume given arr is 1 short, i.e. of
  * length 99
@@ -58,5 +61,39 @@ auto getMinAndMax(const std::array<T, N>& arr)
   });
 
   return std::make_pair(min, max);
+}
+
+/* How do you find all pairs of an integer array whose sum is
+ * equal to a given number?
+*/
+template <std::size_t N>
+std::vector<std::pair<int, int>> pairsSumTo(std::array<int, N> arr, const int sum)
+{
+  // to simplify looping and inserts we start with a
+  // sorted array
+  std::sort(std::begin(arr), std::end(arr));
+
+  // for sake of uniqueness we first
+  // store pairs in a set
+  // notice non-default hash function
+  std::unordered_set<std::pair<int, int>, pair_hash> tmpSet;
+
+  for(auto it = arr.begin(); (*it < sum) && it != arr.end(); ++it)
+  {
+    for(auto itt = it+1;  itt != arr.end(); ++itt)
+    {
+      const auto current{*it};
+      const auto other{*itt};
+      if(current + other == sum)
+      {
+        tmpSet.emplace(current, other);
+      }
+    }
+  }
+  std::vector<std::pair<int, int>> ret;
+  ret.reserve(tmpSet.size());
+  std::copy(std::begin(tmpSet), std::end(tmpSet), std::back_inserter(ret));
+
+  return ret;
 }
 #endif // ARRAYS_H
