@@ -4,6 +4,7 @@
 #include <numeric>
 
 #include "Arrays.h"
+#include "QuickSort.h"
 
 template <typename T>
 struct DefaultPrinter
@@ -36,9 +37,10 @@ void printContainer(const T& vec)
 
 int main(int argc, char *argv[])
 {
-  const std::array<int, 8> testArr{7,5,2,3,8,1,13,5};
-  const auto res = pairsSumTo(testArr, 8);
-  printContainer<std::vector<std::pair<int, int>>, PairPrinter<int>>(res);
+  std::array<int, 8> testArr{7,5,2,3,-8,1,13,5};
+  std::vector<double> testVec{7.5,5.4,2.8,3.0,-8.1,1.4,13.9,5.7};
+  quickSort(testVec);
+  printContainer(testVec);
 
   //pairsSumTo()
   return 0;

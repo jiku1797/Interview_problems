@@ -12,4 +12,5 @@ SOURCES += \
 
 HEADERS += \
   ../arrays/Arrays.h \
+  ../arrays/QuickSort.h \
   Util.h
