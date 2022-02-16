@@ -6,6 +6,7 @@
 #include <numeric>
 #include <algorithm>
 #include <unordered_set>
+#include <unordered_map>
 
 #include "Util.h"
 
@@ -93,6 +94,37 @@ std::vector<std::pair<int, int>> pairsSumTo(std::array<int, N> arr, const int su
   std::vector<std::pair<int, int>> ret;
   ret.reserve(tmpSet.size());
   std::copy(std::begin(tmpSet), std::end(tmpSet), std::back_inserter(ret));
+
+  return ret;
+}
+
+/* How do you find duplicate numbers in an array if it contains
+ * multiple duplicates?
+ * \return Map of duplicated element and its multiplicity
+*/
+template <typename T, std::size_t N>
+std::unordered_map<T, int> findAllDuplicates(std::array<T, N> arr)
+{
+  std::unordered_map<T, int> ret;
+  std::sort(arr.begin(), arr.end(), std::less<T>());
+
+  int count{0};
+  for(auto it=arr.begin(); it!=arr.end();)
+  {
+    count = 1;
+    while(it + count != arr.end())
+    {
+      if(*it == *(it + count))
+      {
+        ++count;
+      }
+      else
+        break;
+    }
+
+    ret.insert({*it, count});
+    ++it;
+  }
 
   return ret;
 }

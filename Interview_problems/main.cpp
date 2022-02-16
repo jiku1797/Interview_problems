@@ -37,10 +37,16 @@ void printContainer(const T& vec)
 
 int main(int argc, char *argv[])
 {
-  std::array<int, 8> testArr{7,5,2,3,-8,1,13,5};
-  std::vector<double> testVec{7.5,5.4,2.8,3.0,-8.1,1.4,13.9,5.7};
-  quickSort(testVec);
-  printContainer(testVec);
+  std::array<int, 11> testArr{7,5,7,3,-8,3,7,5,3,3,3};
+  //std::vector<double> testVec{7.5,5.4,2.8,3.0,-8.1,1.4,13.9,5.7};
+  auto result = findAllDuplicates(testArr);
+  for(const auto& [elem, mult] : result)
+  {
+    std::cout << "Element: " << elem
+              << "\tMultiplicity: "
+              << mult << '\n';
+  }
+  //printContainer(result);
 
   //pairsSumTo()
   return 0;
