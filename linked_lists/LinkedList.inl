@@ -1,7 +1,7 @@
 template <typename T>
 void SList<T>::createNode(const T& val)
 {
-  Node<T>* tmp = new Node(val);
+  auto* tmp = new Node(val);
 
   if(!m_head)
   {
@@ -14,6 +14,14 @@ void SList<T>::createNode(const T& val)
     m_tail->m_next = tmp;
     m_tail = tmp;
   }
+}
+
+template <typename T>
+void SList<T>::insertHead(const T& val)
+{
+  auto* tmp = new Node(val);
+  tmp->m_next = m_head;
+  m_head = tmp;
 }
 
 template <typename T>

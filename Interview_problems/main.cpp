@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
   SList<int> myLst;
   myLst.createNode(5);
   myLst.createNode(7);
+  myLst.insertHead(11);
 
   myLst.print();
   return 0;

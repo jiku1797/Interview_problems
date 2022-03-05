@@ -16,6 +16,7 @@ class SList
 {
 public:
   void createNode(const T& val);
+  void insertHead(const T& val);
   void print();
 
 private:
