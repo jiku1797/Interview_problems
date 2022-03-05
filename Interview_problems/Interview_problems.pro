@@ -16,4 +16,7 @@ HEADERS += \
   ../arrays/QuickSort.h \
   ../linked_lists/LinkedList.h \
   ../linked_lists/LinkedList.inl \
+  ../linked_lists/LinkedListSpecial.inl \
   Util.h
+
+DISTFILES +=

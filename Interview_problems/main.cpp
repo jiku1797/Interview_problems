@@ -45,8 +45,12 @@ int main()
   myLst.createNode(7);
   myLst.createNode(9);
   myLst.insertTail(11);
-  myLst.popAt(0);
+  myLst.insertTail(13);
+  myLst.insertTail(15);
 
   myLst.print();
+
+  auto elem = myLst.getMiddleElem();
+  std::cout << "Middle elem: " << elem << '\n';
   return 0;
 }

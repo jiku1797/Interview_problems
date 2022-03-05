@@ -4,7 +4,7 @@
 template <typename T>
 struct Node
 {
-  Node(T val) : m_val{val}, m_next{nullptr} {}
+  Node(T val) : m_next{nullptr}, m_val{val} {}
   Node() = default;
 
   Node<T>* m_next{nullptr};
@@ -24,7 +24,11 @@ public:
   void popHead();
   void popTail();
   void popAt(int pos);
+
   void print();
+
+  // special functions
+  T getMiddleElem() const;
 
 private:
   Node<T>* m_head{nullptr};
@@ -32,5 +36,6 @@ private:
 };
 
 #include "LinkedList.inl"
+#include "LinkedListSpecial.inl"
 
 #endif // LINKEDLIST_H
