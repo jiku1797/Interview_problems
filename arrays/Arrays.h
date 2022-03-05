@@ -128,4 +128,15 @@ std::unordered_map<T, int> findAllDuplicates(std::array<T, N> arr)
 
   return ret;
 }
+
+/*
+ * How are duplicates removed from an array without using any library?
+*/
+template <typename T, std::size_t N>
+std::vector<T> rmDuplNoLib(const std::array<T, N>& arr)
+{
+  std::unordered_set<T> set{std::begin(arr), std::end(arr)};
+  std::vector<T> ret{std::begin(set), std::end(set)};
+  return ret;
+}
 #endif // ARRAYS_H

@@ -5,7 +5,8 @@ CONFIG -= qt
 
 INCLUDEPATH += \
     ../arrays/ \
-    ../strings
+    ../strings \
+    ../linked_lists
 
 SOURCES += \
         main.cpp
@@ -13,4 +14,6 @@ SOURCES += \
 HEADERS += \
   ../arrays/Arrays.h \
   ../arrays/QuickSort.h \
+  ../linked_lists/LinkedList.h \
+  ../linked_lists/LinkedList.inl \
   Util.h

@@ -17,19 +17,6 @@ How do you reverse an array in place in Java?
 How are duplicates removed from an array without using any library?
 Ready for the solutions to the problems?
 
-Here are the solutions to each of these array problems:
-
-How do you find the missing number in a given integer array of 1 to 100? (solution)
-How do you find the duplicate number on a given integer array? (solution)
-How do you find the largest and smallest number in an unsorted integer array? (solution)
-How do you find all pairs of an integer array whose sum is equal to a given number? (solution)
-How do you find duplicate numbers in an array if it contains multiple duplicates? (solution)
-How are duplicates removed from a given array in Java? (solution)
-How is an integer array sorted in place using the quicksort algorithm? (solution)
-How do you remove duplicates from an array in place? (solution)
-How do you reverse an array in place in Java? (solution)
-How are duplicates removed from an array without using any library? (solution)
-These questions will not only help you to develop your problem-solving skills but also improve your knowledge of array data structure.
 Linked List Programming Interview Questions
 A linked list is another common data structure that complements the array data structure. Similar to the array, it is also a linear data structure and stores elements in a linear fashion. However, unlike the array, it doesn’t store them in contiguous locations; instead, they are scattered everywhere in memory, which is connected to each other using nodes.
 
