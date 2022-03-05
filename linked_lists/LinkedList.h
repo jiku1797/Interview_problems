@@ -15,9 +15,14 @@ template<typename T>
 class SList
 {
 public:
+  ~SList();
+
   void createNode(const T& val);
   void insertHead(const T& val);
   void insertTail(const T& val);
+  void insertAt(int pos, const T& val);
+  void popHead();
+  void popTail();
   void print();
 
 private:

@@ -36,15 +36,15 @@ void printContainer(const T& vec)
   }
 }
 
-int main(int argc, char *argv[])
+int main()
 {
   //std::array<int, 11> testArr{7,5,7,3,-8,3,7,5,3,3,3};
   //std::vector<double> testVec{7.5,5.4,2.8,3.0,-8.1,1.4,13.9,5.7};
   SList<int> myLst;
   myLst.createNode(5);
   myLst.createNode(7);
-  myLst.insertHead(11);
-  myLst.insertTail(8);
+  myLst.createNode(9);
+  myLst.insertTail(11);
 
   myLst.print();
   return 0;
