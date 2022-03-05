@@ -25,6 +25,14 @@ void SList<T>::insertHead(const T& val)
 }
 
 template <typename T>
+void SList<T>::insertTail(const T& val)
+{
+  auto* tmp = new Node(val);
+  m_tail->m_next = tmp;
+  m_tail = tmp;
+}
+
+template <typename T>
 void SList<T>::print()
 {
   Node<T>* tmp = m_head;

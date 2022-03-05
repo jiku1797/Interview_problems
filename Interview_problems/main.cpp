@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
   myLst.createNode(5);
   myLst.createNode(7);
   myLst.insertHead(11);
+  myLst.insertTail(8);
 
   myLst.print();
   return 0;
