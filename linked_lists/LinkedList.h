@@ -23,6 +23,7 @@ public:
   void insertAt(int pos, const T& val);
   void popHead();
   void popTail();
+  void popAt(int pos);
   void print();
 
 private:

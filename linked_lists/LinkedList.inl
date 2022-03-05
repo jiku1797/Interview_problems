@@ -99,6 +99,28 @@ void SList<T>::popTail()
 }
 
 template <typename T>
+void SList<T>::popAt(int pos)
+{
+  auto* cur = m_head;
+  auto* pre = m_head;
+
+  if(pos == 0)
+  {
+    popHead();
+    return;
+  }
+
+  for(int i=0; i<pos; ++i)
+  {
+    pre = cur;
+    cur = cur->m_next;
+  }
+
+  pre->m_next = cur->m_next;
+  delete cur;
+}
+
+template <typename T>
 void SList<T>::print()
 {
   Node<T>* tmp = m_head;
